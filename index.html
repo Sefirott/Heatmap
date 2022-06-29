@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Tolga </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="canvas bg"></div>
+</div><div class="flex">
+<div id="background-video" class="videos">
+</div>
+<div class="flex2">
+<input type="file" class="d-none" id="addVideosInput" accept=" video/*">
+<button class="btn" id="addVideosBtn">Upload Video</button>
+<button class="btn" id="record">Record</button>
+<input id="radius" type="text" onchange="getRadius(); changeRadius();" placeholder="Radius: default is 30"/>
+<input id="time" value="1" type="text"  placeholder="Time: default is 1"/>  
+</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/heatmap.js/2.0.2/heatmap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
